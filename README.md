@@ -1,7 +1,7 @@
 Installation
 Clone the repo using below URL
 
-https://github.com/akshayp7/playwright-typescipt-playwright-test.git
+https://github.com/grvtwr18/WithSecureTriangleAPI.git
 
 Navigate to folder and install npm packages using:
 

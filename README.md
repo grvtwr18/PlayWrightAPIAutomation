@@ -36,5 +36,5 @@ You can simply open the project if you have VS code Editor.
         Go to open folder and choose the project cloned in you local. This will open your project in VS Code
         Go to View option in VS Code after importing the project and click on Terminal Option.
         Terminal will open in the project location. 
-        You can run **npm install** to resolve dependencies.
+        You can run <npm install> to resolve dependencies.
         After this follow above step to run the the test from the terminal.

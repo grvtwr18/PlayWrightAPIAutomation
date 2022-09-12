@@ -1,12 +1,8 @@
 import { test, expect, APIResponse, APIRequestContext } from '@playwright/test';
 import dataTriangle from '../datafiles/dataTriangleTest.json'
 import { testConfig } from '../testConfig';
-import { Logger } from "tslog";
 import { APIUtils } from '../Utils/APIUtils';
-const log: Logger = new Logger();
 let response: APIResponse;
-let successCode = '200';
-let successStatusText = 'OK';
 const apiActions = new APIUtils();
 const testData = dataTriangle
 
@@ -21,7 +17,7 @@ testData.forEach(jsonData => {
 
         if (jsonData.callFlag.match("get")) {
 
-            response = await apiActions.get(request, `${testConfig.baseURI}/version`, successCode, testConfig.retry);
+            response = await apiActions.get(request, `${testConfig.baseURI}/version`, expStatusCode, testConfig.retry);
             messageFromResponse = (await response.body()).toString()
 
         } else {
@@ -30,9 +26,9 @@ testData.forEach(jsonData => {
             messageFromResponse = (await apiActions.getValueForKeyFromJSONResponse(response, jsonData.keyToGetFromResponse)).toString();
         }
 
-        expect.soft(`${response.status()} ${response.statusText()}`, "Response is not as expected ").toBe(`${expStatusCode} ${expStatusText}`);
+        expect.soft(`${response.status()} ${response.statusText()}`, "Verifying Response status is as expected ").toBe(`${expStatusCode} ${expStatusText}`);
 
-        expect.soft(messageFromResponse, `The message in response is not as expected`).toBe(successMessage);
+        expect.soft(messageFromResponse, `Verifying Response body is as expected`,).toBe(successMessage);
 
     });
 });

@@ -28,6 +28,7 @@ Tu run all tests at use below command in the command prompt launched in above In
 3. To see the reports manually for the run you can navigate to folder <YourLocation>\WithSecureTriangleAPI\playwright-report. Click on index.html file to open it with any browser. Or you can use below command to open the html report in the default system browser.
 
 **Import in Visual Studio Code Editor** -
+
 You can simply open the project if you have VS code Editor. 
     
         Clone the project as in first step

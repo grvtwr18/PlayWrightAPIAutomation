@@ -25,7 +25,7 @@ Tu run all tests at use below command in the command prompt launched in above In
 
 2. In case you want change the default behaviour of reporting, please got to playwright.config.ts file and go to param - reporter: [['html', { open: 'always' }]]. You can change the value of Open to -> 'never', 'on-failure'(this is default nature) 
 
-3. To see the reports manually for the run you can navigate to folder **FolderLocation\WithSecureTriangleAPI\playwright-report**. Click on index.html file to open it with any browser. Or you can use below command to open the html report in the default system browser.
+3. To see the reports manually for the run you can navigate to folder **FolderLocation\WithSecureTriangleAPI\playwright-report**.Click on index.html file to open it with any browser. Or you can use below command to open the html report in the default system browser.
 
 **Import in Visual Studio Code Editor** -
 

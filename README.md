@@ -1,5 +1,5 @@
 **Prerequisite** -
-System should have the nodejs installed. If not then install it from below URL 
+System should have the NodeJS installed. If not, then install it from below URL 
 
         https://nodejs.org/en/download/
 
@@ -21,7 +21,7 @@ Tu run all tests at use below command in the command prompt launched in above In
 
 **Test Run Reports** -
 
-1. Test run report is an HTML report and will open automatically in default browser. Make sure to close the reporting session    with 'CTRL+C' followed by Y in command prompt before rerunning the test. Otherwise if you dont close the current reporting thread, it will cause error as the address where the report is opened is already in use by the last report.
+1. Test run report is an HTML report and will open automatically in default browser. Make sure to close the reporting session    with 'CTRL+C' followed by Y in command prompt before rerunning the test. Otherwise, if you don’t close the current reporting thread, it will cause error as the address where the report is opened is already in use by the last report.
 
 2. In case you want change the default behaviour of reporting, please got to playwright.config.ts file and go to param - reporter: [['html', { open: 'always' }]]. You can change the value of Open to -> 'never', 'on-failure'(this is default nature) 
 
@@ -37,4 +37,4 @@ You can simply open the project if you have VS code Editor.
         Go to View option in VS Code after importing the project and click on Terminal Option.
         Terminal will open in the project location. 
         You can run <npm install> to resolve dependencies.
-        After this follow above step to run the the test from the terminal.
+        After this follow above step to run the test from the terminal.

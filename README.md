@@ -9,7 +9,7 @@ System should have the nodejs installed. If not then install it from below URL
 
         git clone https://github.com/grvtwr18/WithSecureTriangleAPI.git
 
-2. Navigate to folder <YourLocation>\WithSecureTriangleAPI and then install npm packages dependency using command:
+2. Navigate to folder **YourFolderLocationWhereYouHaveClonedTheProject\WithSecureTriangleAPI** and then install npm packages    dependency using command:
 
         npm install
 
@@ -25,7 +25,7 @@ Tu run all tests at use below command in the command prompt launched in above In
 
 2. In case you want change the default behaviour of reporting, please got to playwright.config.ts file and go to param - reporter: [['html', { open: 'always' }]]. You can change the value of Open to -> 'never', 'on-failure'(this is default nature) 
 
-3. To see the reports manually for the run you can navigate to folder <YourLocation>\WithSecureTriangleAPI\playwright-report. Click on index.html file to open it with any browser. Or you can use below command to open the html report in the default system browser.
+3. To see the reports manually for the run you can navigate to folder **FolderLocation\WithSecureTriangleAPI\playwright-report**. Click on index.html file to open it with any browser. Or you can use below command to open the html report in the default system browser.
 
 **Import in Visual Studio Code Editor** -
 
